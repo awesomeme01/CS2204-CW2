@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PizzaHeaven | Order</title>
+	<meta charset="utf-8">
+	<meta name="description" content="CS2204 CW1 OrderPage for Pizzeria">
+  	<meta name="keywords" content="CS2204, CW1, HomePage, Pizzeria, Shabdan, tasty, delicious, margaritta, pepperoni, 4 seasons, order, deliver">
+  	<meta name="author" content="MEDET UULU Shabdanbek">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header>
+		<div class="left-block" id="logo-block-top">
+			<a href="index.html">
+				<img src="media/pizza-64.png" alt="pizzaLogo">
+				<h1>PizzaHeaven</h1>
+			</a>
+		</div>
+	</header>
+	<section class="menu-main-block">
+		<h3>Menu</h3>
+		<div class="OrderingMenu" id ="menu">
+			<ul >
+				<li>
+					<h3>Pizza</h3>
+					<img width="50" src="media/pizzaMenuItem.png" alt="pizzaMenuItem">
+					<form action="addPizzaItem">
+						<select name="pizzaSelect" id="pizzaOrderSelect">
+							<option value="margharitta">Margharitta</option>
+							<option value="pepperoni">Pepperoni</option>
+							<option value="hawaii">Hawaii</option>
+							<option value="fourcheese">Four Cheese</option>
+						</select>
+						<input type="number" name="pizzaQuantity" min="1" max="20">
+						<input type="submit" name="AddPizzaToOrder" value="Add">
+					</form>
+				</li>
+				<li>
+					<h3>Drink</h3>
+					<img width="50" src="media/drinkMenuItem.png" alt="DrinkMenuitem">
+					<form action="addDrinkItem">
+						<select name="drinkSelect" id="drinkOrderSelect">
+							<option value="CokeM">Coke M</option>
+							<option value="FantaM">Fanta M</option>
+							<option value="SpriteM">Sprite M</option>
+							<option value="CokeL">Coke L</option>
+							<option value="FantaL">Fanta L</option>
+							<option value="SpriteL">Sprite L</option>
+						</select>
+						<input type="number" name="drinkQuantity" min="1" max="20">
+						<input type="submit" name="AddDrinkToOrder" value="Add">
+					</form>
+				</li>
+				<li>
+					<h3>Drink</h3>
+					<img width="50" src="media/desertMenuItem.png" alt="DesertMenuItem">
+					<form action="addDesertItem">
+						<select name="desertSelect" id="DesertOrderSelect">
+							<option value="ChocolateIceCream">Chocolate Ice-Cream</option>
+							<option value="VanillaIceCream">Vanilla Ice-Cream</option>
+							<option value="ChocolateMilkShake">Chocolate Milk-shake</option>
+							<option value="StrawberryMilkShake">Strawberry Milk-shake</option>
+							<option value="Chocolate Cup-Cake">Chocolate Cup-Cake</option>
+							<option value="Marshmello Cake">Marshmello Baked Cake</option>
+						</select>
+						<input type="number" name="desertQuantity" min="1" max="10">
+						<input type="submit" name="AddDesertToOrder" value="Add">
+					</form>
+				</li>
+			</ul>
+		</div>
+		<div class="OrderedItemTable">
+			<h3>Ordered Items</h3>
+			<h5>12 October, 2019, 15:39</h5>
+			<h6>Table:4, No.of people: 4</h6>
+			<table class="orderedItemsTable">
+				<tr class="tableHeadingRow">
+					<th class="tableHeading">Description</th>
+					<th class="tableHeading">Qty</th>
+				</tr>
+				<tr class="tableItemRow">
+					<td class="tableItem">Pizza-Margharitta</td>
+					<td class="tableItem">1</td>
+				</tr>
+				<tr class="tableItemRow">
+					<td class="tableItem">Pizza-Pepperoni</td>
+					<td class="tableItem">1</td>
+				</tr>
+				<tr class="tableItemRow">
+					<td class="tableItem">Coke L</td>
+					<td class="tableItem">4</td>
+				</tr>
+				<tr class="tableFooterRow">
+					<td class="tableItem">Chocolate Cup-Cake</td>
+					<td class="tableItem">4</td>
+				</tr>
+			</table>
+			<a href="#">Undo</a>
+		</div>
+	</section>
+
+	<footer>
+		<div class="footer-logo-block" id="logo-block">
+			<a href="index.html">
+				<img src="media/pizza-64.png" alt="pizzaLogo">
+				<h1>PizzaHeaven</h1>
+			</a>
+		</div>
+		<h4 class="copyright-text">&copy; CityU 2019 sources of images and text from <a href="https://commons.wikimedia.org" target="newtab">Wikimedia COmmons</a> and Courtes of Icon pack by <a href = "https://icons8.com" target="newtab">Icons8</a></h4>
+
+		<h4>This page is designed by SHabdanbek MEDET UULU. SID 55966577. Tap <a href="design.html" target="newtab">here</a> to view design page.</h4>
+	</footer>
+</body>
+</html>
+
+
+<!--
+#todo
+label tag
+select tag
+fieldset tag
+ -->
+
+<!-- Checkbox i -->
